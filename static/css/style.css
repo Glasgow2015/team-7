@@ -2,6 +2,10 @@
     background-color: purple;
 }
 
+.purple:hover {
+    background-color: #4a004a;
+}
+
 .navbar-nav > li:hover{
     background-color: #4a004a;
 }
