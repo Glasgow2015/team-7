@@ -18,7 +18,7 @@ window.onload = function() {
         pie.each(function() {
            if(this.sector.id === that.id) {
             console.log(pie)
-               tooltip = r.text(320, 220, this.sector.value.value).attr({"font-size": 0, "fill":"#000"});
+               tooltip = r.text(320, 360, this.sector.value.value).attr({"font-size": 15, "fill":"#000"});
            }
         });
 
@@ -51,7 +51,7 @@ window.onload = function() {
         donut.each(function() {
            if(this.sector.id === that.id) {
             console.log(donut)
-               tooltip = r.text(320, 580, this.sector.value.value).attr({"font-size": 0, "fill":"#000"});
+               tooltip = r.text(320, 720, this.sector.value.value).attr({"font-size": 15, "fill":"#000"});
            }
         });
 
