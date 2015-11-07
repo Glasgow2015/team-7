@@ -40,7 +40,7 @@ window.onload = function() {
     
     });
     
-    var donut = r.piechart(320, 600, 100, [4, 96], {donut : true, colors : ["#406", "#b7d"], legend: ["Survive beyond 5 years", "Do not survive"], legendpos: "east"});
+    var donut = r.piechart(320, 600, 100, [4, 96], {donut : true, colors : ["#406", "#b7d"], legend: ["Survive beyond 5 years ", "Do not survive"], legendpos: "east"});
     r.text(320, 470, "Survival Rate").attr({ font: "20px sans-serif" });
     donut.hover(
 		function () {
