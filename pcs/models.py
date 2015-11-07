@@ -13,7 +13,7 @@ class Story(models.Model):
 class Volunteer(models.Model):
 	firstName = models.CharField(max_length = 20);
 	lastName = models.CharField(max_length = 20);
-	telephoneNumber = models.CharField(max_length = 11)
+	contactNumber = models.CharField(max_length = 11)
 	postCode = models.CharField(max_length = 6)
 	emailAddress = models.EmailField();
 
