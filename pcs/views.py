@@ -37,3 +37,8 @@ def login(request):
 	context = RequestContext(request)
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/login.html', context_dict)
+
+def about(request):
+	context = RequestContext(request)
+	context_dict = {'boldmessage': "Bold Font"}
+	return render(request, 'pcs/about.html', context_dict)

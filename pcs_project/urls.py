@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^pcs/', include('pcs.urls')), # ADD THIS NEW TUPLE!
+    url(r'^pcs/', include('pcs.urls')),
 )
 
 if not settings.DEBUG:
