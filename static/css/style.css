@@ -30,3 +30,10 @@
 .btn:hover{
     background-color: #4a004a;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      /*width: 70%;*/
+      height: 450px;
+      margin: auto;
+  }
