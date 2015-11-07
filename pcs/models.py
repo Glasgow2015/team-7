@@ -10,3 +10,14 @@ class Story(models.Model):
 	def _unicode_(self):
 		return self.id
 
+class Volunteer(models.Model):
+	firstName = models.CharField(max_length = 20);
+	lastName = models.CharField(max_length = 20);
+	telephoneNumber = models.CharField(max_length = 11)
+	postCode = models.CharField(max_length = 6)
+	emailAddress = models.EmailField();
+
+	def _unicode_(self):
+		return self.id
+
+
