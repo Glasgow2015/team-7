@@ -85,7 +85,7 @@ window.onload = function() {
     r.text(320, 900, "Relative research funding (in pounds) /\n death spent by cancer type").attr(txtattr);
 
 
-    r.barchart(190, 950, 300, 220, [[1, 6, 11, 12, 23, 26, 28, 35]], {colors : ["#FFE552"], type : "round"}).hover(fin, fout);
+    r.barchart(190, 950, 300, 220, [[1, 6, 11, 12, 23, 26, 28, 35]], {colors : ["#EA44F3"], type : "round"}).hover(fin, fout);
     r.text(365, 1220, "Hodgkin's decease").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(328, 1220, "Skin cancer").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292, 1220, "Leukaemia").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
