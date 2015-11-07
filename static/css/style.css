@@ -1,3 +1,28 @@
-.purple{
+.purple {
     background-color: purple;
+}
+
+.navbar-nav > li:hover{
+    background-color: #4a004a;
+}
+
+.navbar-nav > li:active{
+    background-color: #4a004a;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-inverse .navbar-header > li > a {
+  color: white;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
