@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/pcs/">Pancreatic Cancer Scotland</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/pcs/">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="/pcs/support/">Support</a></li>
+        <li><a href="/pcs/symptoms/">Syptoms</a></li>
+        <li><a href="/pcs/statistics/">Statistics</a></li>
+        <li><a href="/pcs/getinvolved/">Get Involved</a></li>
+        <li><a href="/pcs/sharedstories/">Shared Stories</a></li>
+        <li><a href="/pcs/login/">Login</a></li>
+        <li><a href="/pcs/about/">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div>
     {% block body_block %}{% endblock %}
 </div>
