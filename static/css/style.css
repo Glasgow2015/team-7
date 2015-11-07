@@ -26,3 +26,7 @@
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+.btn:hover{
+    background-color: #4a004a;
+}

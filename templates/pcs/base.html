@@ -14,14 +14,19 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/pcs/">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="/pcs/support/">Support</a></li>
-        <li><a href="/pcs/symptoms/">Syptoms</a></li>
-        <li><a href="/pcs/statistics/">Statistics</a></li>
-        <li><a href="/pcs/getinvolved/">Get Involved</a></li>
-        <li><a href="/pcs/sharedstories/">Shared Stories</a></li>
-        <li><a href="/pcs/login/">Login</a></li>
-        <li><a href="/pcs/about/">About</a></li>
+        <li><a href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="{% url 'support' %}">Support</a></li>
+        <li><a href="{% url 'symptoms' %}">Syptoms</a></li>
+        <li><a href="{% url 'statistics' %}">Statistics</a></li>
+        <li><a href="{% url 'getinvolved' %}">Get Involved</a></li>
+        <li><a href="{% url 'sharedstories' %}">Shared Stories</a></li>
+       {% if user.is_authenticated %}
+            <li><a href="{% url 'auth_logout' %}?next=/pcs/">Logout</a></li>
+        {% else %}
+            <li><a href="{% url 'registration_register' %}">Register Here</a></li>
+            <li><a href="{% url 'auth_login' %}">Login</a></li>
+        {% endif %}
+        <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </div>
   </div>
