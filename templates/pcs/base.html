@@ -26,7 +26,6 @@
        {% if user.is_authenticated %}
             <li><a href="{% url 'auth_logout' %}?next=/pcs/">Logout</a></li>
         {% else %}
-            <li><a href="{% url 'registration_register' %}">Register Here</a></li>
             <li><a href="{% url 'auth_login' %}">Login</a></li>
         {% endif %}
         <li><a href="{% url 'about' %}">About</a></li>
