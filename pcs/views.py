@@ -79,10 +79,7 @@ def volunteer_registration(request):
 @login_required
 def add_story(request):
 	if request.method == 'POST':
-		print request.FILES
 		form = StoryForm(request.POST, request.FILES)
-		print request.FILES
-		print request
 		if form.is_valid():
 			f = form.save(commit = False)
 			f.user = request.user
