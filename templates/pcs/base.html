@@ -59,6 +59,7 @@
 
             <li><a href="{% url 'sharedstories' %}">Shared Stories</a></li>
            {% if user.is_authenticated %}
+                <li><a href="{% url 'add_story' %}?next=/pcs/">Profile</a></li>
                 <li><a href="{% url 'auth_logout' %}?next=/pcs/">Logout</a></li>
             {% else %}
                 <li><a href="{% url 'auth_login' %}">Login</a></li>
