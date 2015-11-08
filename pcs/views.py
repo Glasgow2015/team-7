@@ -43,7 +43,9 @@ def map(request):
 
 	for volunteer in Volunteer.objects.filter():
 		print volunteer.postcode
-		post_codes += [volunteer.postcode.decode("utf-8")]
+		post_code = {"person":volunteer.firstName.decode("utf-8") + " " + volunteer.lastName.decode("utf-8"),
+					 "post_code": volunteer.postcode.decode("utf-8")}
+		post_codes += [post_code]
 
 	print post_codes
 	json_post_codes = json.dumps(post_codes)
