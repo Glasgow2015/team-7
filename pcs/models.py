@@ -14,7 +14,7 @@ class Volunteer(models.Model):
 	firstName = models.CharField(max_length = 20);
 	lastName = models.CharField(max_length = 20);
 	contactNumber = models.CharField(max_length = 11)
-	postcode = models.CharField(max_length = 6)
+	postcode = models.CharField(max_length = 8)
 	emailAddress = models.EmailField();
 
 	def _unicode_(self):
