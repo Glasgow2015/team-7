@@ -9,6 +9,7 @@
 .navbar-nav > li:active{
     background-color: #4a004a;
 }
+
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
@@ -34,9 +35,12 @@
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      width: auto;
+     overflow: hidden;
+    position: relative;
+      width: 100%;
       height: 450px;
       margin: auto;
+
   }
 
 
@@ -45,10 +49,13 @@
   width:5%;
 }
 
+.dropdown-menu{
+    background: #e5c1ff;
+}
+
 /*// statistic */
 #canvas_container {
-                width: 1850;
-                height: 1800;
-                border: 1px solid #aaa;
-
-            }
+   width: 1850;
+   height: 1800;
+   border: 1px solid #aaa;
+}
