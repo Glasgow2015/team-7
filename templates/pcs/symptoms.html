@@ -1,7 +1,43 @@
-{% extends "pcs/base.html" %}
 
+{% extends "pcs/base.html" %}
+{% load staticfiles %}
 {% block body_block %}
 
-    <h1>Symptoms</h1>
+    <h1>Pancreatic Cancer Symptoms</h1>
+<br>
+Pancreatic cancer is sometimes called a “silent cancer” because the early symptoms are often vague and unrecognised.
+It is only later, when more specific symptoms arise, that patients and doctors consider pancreatic cancer as a possibility,
+by which time it is often too late for surgery that could cure the
+<br>
+<img src="{% static "images/symptoms.png" %}" />
+
+
+<br><br>
+<b>Classic pancreatic cancer symptoms can include:</b>
+<br>
+<ul>
+<li>Painless jaundice (yellow skin/eyes, dark urine). This is related to bile duct obstruction</li>
+<li>Weight loss which is significant and unexplained</li>
+<li>Abdominal pain which is new-onset and significant</li>
+</ul>
+
+<br><br>
+
+<b>Other possible symptoms of pancreatic cancer:</b>
+<br>
+<ul>
+<li>Pain in the upper abdomen that radiates to the back which is new, significant and persistent that is relieved by leaning forward</li>
+<li>Back pain</li>
+<li>Diabetes which is new-onset and not associated with weight gain</li>
+<li>Vague indigestion (dyspepsia) or abdominal discomfort (not responding to prescribed medication)</li>
+<li>Loss of appetite</li>
+<li>Nausea and vomiting</li>
+<li>Pain when eating</li>
+<li>Steatorrhea (fatty stools that are often pale and smell foul)</li>
+    </ul>
+<br><br>
+Not everyone will have all of these symptoms.
+For example, those who have a tumour in the body or tail of the pancreas are unlikely to have painless jaundice.
+All of these symptoms can have other causes, and there is not yet a reliable and easy test for pancreatic cancer.
 
 {% endblock %}
