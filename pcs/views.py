@@ -49,7 +49,16 @@ def map(request):
 	json_post_codes = json.dumps(post_codes)
 
 	return render(request, 'pcs/map.html', {"post_codes" :json_post_codes })
+
 def volunteer_registration(request):
+	post_codes = []
+
+	for volunteer in Volunteer.objects.filter():
+		print volunteer.postcode
+		post_codes += [volunteer.postcode.decode("utf-8")]
+
+	json_post_codes = json.dumps(post_codes)
+
 	if request.method == 'POST':
 		form = VolunteerRegistrationForm(request.POST)
 
@@ -61,7 +70,7 @@ def volunteer_registration(request):
 	else:
 		form = VolunteerRegistrationForm()
 
-	return render(request, 'pcs/volunteer_registration.html', {'form':form})
+	return render(request, 'pcs/volunteer_registration.html', {'form':form, "post_codes":json_post_codes})
 
 
 
