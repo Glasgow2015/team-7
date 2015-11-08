@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add Story</title>
+    </head>
+
+    <body>
+        <h1>Add a new Story:</h1>
+
+        <form id = "add_story_form" method = "post" action = "/pcs/add_story/" enctype="multipart/form-data">
+        {% csrf_token %}
+
+            {% for field in form.visible_fields %}
+                {{field.errors}}
+                {{field.help_text}}
+                {{field}}
+            {% endfor %}
+
+            <input type = "submit" name = "submit" value = "Create Story" />
+        </form>
+
+    </body>
+
+</html>

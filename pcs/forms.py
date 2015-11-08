@@ -1,5 +1,5 @@
 from django import forms
-from pcs.models import Volunteer
+from pcs.models import Volunteer, Story
 
 class VolunteerRegistrationForm(forms.ModelForm):
     firstName = forms.CharField(max_length = 20, help_text = "First Name:")
@@ -11,3 +11,17 @@ class VolunteerRegistrationForm(forms.ModelForm):
     class Meta:
         model = Volunteer
         fields = ('firstName', 'lastName', 'contactNumber', 'postcode', 'emailAddress')
+
+class StoryForm(forms.ModelForm):
+    caption = forms.CharField(max_length = 500, help_text = "Caption:")
+    description = forms.CharField(max_length = 500, help_text = "Description:")
+    image = forms.ImageField(help_text = "Image", allow_empty_file=False)
+    # userID =
+
+    class Meta:
+        model = Story
+        fields = ('caption', 'description', 'image')
+
+
+
+

@@ -1,10 +1,9 @@
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
-
-from pcs.forms import VolunteerRegistrationForm, StoryForm
+from pcs.forms import VolunteerRegistrationForm
+from pcs.forms import ContactForm
 from pcs.models import Volunteer
 import json
+
 def index(request):
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/index.html', context_dict)
@@ -75,25 +74,10 @@ def volunteer_registration(request):
 
 	return render(request, 'pcs/volunteer_registration.html', {'form':form, "post_codes":json_post_codes})
 
-@csrf_exempt
-@login_required
-def add_story(request):
-	if request.method == 'POST':
-		print request.FILES
-		form = StoryForm(request.POST, request.FILES)
-		print request.FILES
-		print request
-		if form.is_valid():
-			f = form.save(commit = False)
-			f.user = request.user
-			f.save()
-		else:
-			print form.errors
-	else:
-		form = StoryForm()
+def contact(request):
+	form_class = ContactForm
 
-	return render(request, 'pcs/add_story.html', {'form': form})
-
+	return render(request, 'contact.html', {'form': form_class,},)
 
 
 

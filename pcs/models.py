@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 class Story(models.Model):
 	caption = models.CharField(max_length = 500)
 	description = models.CharField(max_length = 500)
-	image = models.ImageField(upload_to = 'user-images/', blank = True)
-	userID = models.ForeignKey(User)
+	image = models.ImageField(upload_to = 'user-images/', null=True, blank = True)
+	user = models.ForeignKey(User, null=True)
 	
 	def _unicode_(self):
 		return self.id
