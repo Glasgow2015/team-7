@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Donations</title>
+<script src="jquery-1.11.3.js"></script>
+<script>
+$(document).ready(function(){
+	$("form").hide();
+    $("button3").click(function(){
+        $("form").toggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+	$("textarea").hide();
+    $("button2").click(function(){
+        $("textarea").toggle();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+	$("p").hide();
+    $("button4").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<body>
+<center>
+<button><button3>Donate using PayPal</button><br><br>
+<button><button2>Post money to PCS</button><br><br>
+<button><button4>Gift Aid or Standing Order</button>
+
+<br><br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<br><br>
+<textarea rows="11" cols="100">You can post cheques to us at:
+
+Pancreatic Cancer Scotland
+Department of Pancreatic Surgery
+Glasgow Royal Infirmary
+12-14 Alexandra Parade
+Glasgow 
+G31 2ER
+
+Please make your cheque payable to ‘Pancreatic Cancer Scotland’.
+Please don’t post cash to us.</textarea>
+<br><br>
+<p>
+This is a very valuable tax break. We encourage you to use the Gift Aid scheme whenever possible. If you do, we shall ask the taxman to top up your donation.<br> Usually we are able to claim an extra 25% of what you give to us, so long as your contribution comes from your taxed income.<br>
+<br>
+Please download a Gift Aid form <a href="https://www.pancanscot.org/wp-content/uploads/2014/10/pcs_gift_aid_form.pdf">here</a>, and then fill it in and send it to us with your cheque. Keep a copy of the form for your own records, if you wish.</p>
+<br><br>
+<p>You can give money to Pancreatic Cancer Scotland on a regular basis by setting up a Standing Order with your bank or building society. Click here to download a Standing Order form. <br>Please then complete it, and return it to us, so that we understand your intentions properly, and have a record of your details. We shall forward the form on your behalf to your bank or building society. We shall not divulge the details to any other organisation.</p>
+</center></body>
+</html>
