@@ -9,7 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="{% static "css/style.css" %}" rel="stylesheet">
-
+<!--time line -->
+<script src="modernizr.js"></script>
 
 
     <meta charset="UTF-8">
@@ -268,5 +269,30 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+<!--timeline-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script>
+jQuery(document).ready(function($){
+var $timeline_block = $('.cd-timeline-block');
+
+//hide timeline blocks which are outside the viewport
+$timeline_block.each(function(){
+if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+}
+});
+
+//on scolling, show/animate timeline blocks when enter the viewport
+$(window).on('scroll', function(){
+$timeline_block.each(function(){
+if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+}
+});
+});
+});
+</script>
 </body>
 </html>
