@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from pcs.forms import VolunteerRegistrationForm
-
+from pcs.models import Volunteer
+import json
 def index(request):
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/index.html', context_dict)
@@ -37,6 +38,17 @@ def donate(request):
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/donate.html', context_dict)
 
+def map(request):
+	post_codes = []
+
+	for volunteer in Volunteer.objects.filter():
+		print volunteer.postcode
+		post_codes += [volunteer.postcode.decode("utf-8")]
+
+	print post_codes
+	json_post_codes = json.dumps(post_codes)
+
+	return render(request, 'pcs/map.html', {"post_codes" :json_post_codes })
 def volunteer_registration(request):
 	if request.method == 'POST':
 		form = VolunteerRegistrationForm(request.POST)

@@ -11,4 +11,5 @@ urlpatterns = patterns('',
         url(r'^sharedstories/$', views.sharedstories, name='sharedstories'),
         url(r'^symptoms/$', views.symptoms, name='symptoms'),
         url(r'^login/$', views.login, name='login'),
-        url(r'^donate/$', views.donate, name='donate'),)
+        url(r'^donate/$', views.donate, name='donate'),
+        url(r'^map/$', views.map, name='map'),)
