@@ -9,4 +9,5 @@ urlpatterns = patterns('',
         url(r'^getinvolved/$', views.getinvolved, name='getinvolved'),
         url(r'^sharedstories/$', views.sharedstories, name='sharedstories'),
         url(r'^symptoms/$', views.symptoms, name='symptoms'),
-        url(r'^login/$', views.login, name='login'),)
+        url(r'^login/$', views.login, name='login'),
+	url(r'^volunteer_registration/$', views.volunteer_registration, name = 'volunteer_registration'),)
