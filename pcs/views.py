@@ -33,6 +33,10 @@ def about(request):
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/about.html', context_dict)
 
+def donate(request):
+	context_dict = {'boldmessage': "Bold Font"}
+	return render(request, 'pcs/donate.html', context_dict)
+
 def volunteer_registration(request):
 	if request.method == 'POST':
 		form = VolunteerRegistrationForm(request.POST)
