@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from pcs.forms import VolunteerRegistrationForm
 
 def index(request):
 	context_dict = {'boldmessage': "Bold Font"}
@@ -31,3 +32,21 @@ def login(request):
 def about(request):
 	context_dict = {'boldmessage': "Bold Font"}
 	return render(request, 'pcs/about.html', context_dict)
+
+def volunteer_registration(request):
+	if request.method == 'POST':
+		form = VolunteerRegistrationForm(request.POST)
+
+		if form.is_valid():
+			form.save(commit = True)
+			return index(request)
+		else:
+			print form.errors
+	else:
+		form = VolunteerRegistrationForm()
+
+	return render(request, 'pcs/volunteer_registration.html', {'form':form})
+
+
+
+
