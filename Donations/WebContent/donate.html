@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Donations</title>
-<script src="jquery-1.11.3.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 	$("form").hide();
     $("button3").click(function(){
-        $("form").toggle();
+        $("form").show();
+	$("textarea").hide();
+	$("p").hide();
     });
 });
 </script>
@@ -16,7 +18,9 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("textarea").hide();
     $("button2").click(function(){
-        $("textarea").toggle();
+        $("form").hide();
+	$("textarea").show();
+	$("p").hide();
     });
 });
 </script>
@@ -24,7 +28,9 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("p").hide();
     $("button4").click(function(){
-        $("p").toggle();
+        $("form").hide();
+	$("textarea").hide();
+	$("p").show();
     });
 });
 </script>
@@ -56,7 +62,8 @@ Please make your cheque payable to ‘Pancreatic Cancer Scotland’.
 Please don’t post cash to us.</textarea>
 <br><br>
 <p>
-This is a very valuable tax break. We encourage you to use the Gift Aid scheme whenever possible. If you do, we shall ask the taxman to top up your donation.<br> Usually we are able to claim an extra 25% of what you give to us, so long as your contribution comes from your taxed income.<br>
+This is a very valuable tax break. We encourage you to use the Gift Aid scheme whenever possible. If you do, we shall ask the taxman to top up your donation.<br> Usually we are able to claim an extra 25% of what you give to us, so long afunction initMap() {
+	s your contribution comes from your taxed income.<br>
 <br>
 Please download a Gift Aid form <a href="https://www.pancanscot.org/wp-content/uploads/2014/10/pcs_gift_aid_form.pdf">here</a>, and then fill it in and send it to us with your cheque. Keep a copy of the form for your own records, if you wish.</p>
 <br><br>

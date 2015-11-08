@@ -2,6 +2,20 @@
     background-color: purple;
 }
 
+.donate_purple {
+    background-color: purple;
+    color:white;
+}
+.donate_purple:hover {
+    background-color: purple;
+    color:white;
+}
+
+.donate_purple:active {
+    background-color: purple;
+    color:white;
+}
+
 .navbar-nav > li:hover{
     background-color: #4a004a;
 }
