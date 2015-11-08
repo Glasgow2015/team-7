@@ -86,13 +86,13 @@ window.onload = function() {
 
 
     r.barchart(190, 950, 300, 220, [[1, 6, 11, 12, 23, 26, 28, 35]], {colors : ["#EA44F3"], type : "round"}).hover(fin, fout);
-    r.text(365, 1220, "Hodgkin's decease").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
+    r.text(365, 1227, "Hodgkin's decease").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(328, 1220, "Skin cancer").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292, 1220, "Leukaemia").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292-35, 1220, "Cervical cancer").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292-75, 1220, "Sarcoma").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292-108, 1220, "Breast cancer").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
-    r.text(292-144, 1240, "Non-Hodgkin's lymphoma").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
+    r.text(292-144, 1255, "Non-Hodgkin's lymphoma").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     r.text(292-144-35, 1240, "Pancreatic cancer").attr({font: "14px sans-serif"}).transform("t100,100r90t-100,0");
     
    
