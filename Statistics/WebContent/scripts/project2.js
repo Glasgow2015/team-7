@@ -1,5 +1,5 @@
 window.onload = function() {
-    var r = Raphael(10, 50, 1850, 1800);
+    var r = Raphael("canvas_container", 1850, 1800);
     r.text(1000,250,"22 people die each day in the UK from\npancreatic cancer.\nMost people only learn about the pancreas \nwhen an illness affects someone they know.\n\n90% of patients are diagnosed too late for \npotentially curative surgery.").attr({font: "20px sans-serif"});
     r.text(1000,600,"Survival rates for pancreatic cancer have\nshown marginal gains in the last 40 years.\nPancreatic cancer still only has a 4% 5 year\nsurvival rate.").attr({font: "20px sans-serif"});
     r.text(1000,1100,"Pancreatic cancer is the 5th commonest cause\nof cancer death yet receives less than 1% of\nresearch funding.").attr({font: "20px sans-serif"});

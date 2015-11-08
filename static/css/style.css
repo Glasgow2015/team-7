@@ -31,9 +31,24 @@
     background-color: #4a004a;
 }
 
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      /*width: 70%;*/
+      width: auto;
       height: 450px;
       margin: auto;
   }
+
+
+.carousel-control {
+  padding-top:10%;
+  width:5%;
+}
+
+/*// statistic */
+#canvas_container {
+                width: 1850;
+                height: 1800;
+                border: 1px solid #aaa;
+
+            }

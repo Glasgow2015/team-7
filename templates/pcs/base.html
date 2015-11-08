@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+<!--statistics-->
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
 <html lang="en">
 <head>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+
+
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
 
@@ -71,7 +77,7 @@
     </div>
 
     <div class="item">
-      <img src="{% static "images/picture4.jpg" %}" alt="Picture of Rango" />
+      <img src="{% static "images/panorama.png" %}" alt="Picture of Rango" />
                 <div class="carousel-caption">
         <h3>Flowers</h3>
         <p>Beatiful flowers in Kolymbari, Crete.</p>
@@ -79,7 +85,7 @@
     </div>
 
     <div class="item">
-      <img src="{% static "images/picture5.jpg" %}" alt="Picture of Rango" />
+      <img src="{% static "images/panorama.png" %}" alt="Picture of Rango" />
         <div class="carousel-caption">
         <h3>Flowers</h3>
         <p>Beatiful flowers in Kolymbari, Crete.</p>
@@ -100,8 +106,89 @@
 
 
 
+
+
+
+
+
+
+
+
+<!--<div class="container stripe">-->
+    <!--<div class="col-md-12">-->
+         <!--<h1>Bootstrap 3 Thumbnail Slider</h1>-->
+
+        <!--<div class="well">-->
+            <!--<div id="myCarousel" class="carousel slide">-->
+
+                <!--&lt;!&ndash; Carousel items &ndash;&gt;-->
+                <!--<div class="carousel-inner">-->
+                    <!--<div class="item active">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm-3"><a href="#x"><img src="{% static "images/picture1.jpg" %}" alt="Picture of Rango" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x"><img src="{% static "images/picture1.jpg" %}" alt="Picture of Rango" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x"><img src="{% static "images/picture1.jpg" %}" alt="Picture of Rango" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x"><img src="{% static "images/picture1.jpg" %}" alt="Picture of Rango" class="img-responsive"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;/row&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;/item&ndash;&gt;-->
+                    <!--<div class="item">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;/row&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;/item&ndash;&gt;-->
+                    <!--<div class="item">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;/row&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;/item&ndash;&gt;-->
+                <!--</div>-->
+                <!--&lt;!&ndash;/carousel-inner&ndash;&gt; <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>-->
+
+                <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/myCarousel&ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash;/well&ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+
 <div>
     {% block body_block %}{% endblock %}
 </div>
+
+
+        <!--Statistics-->
+<script src="{% static "js/raphael-min.js" %}"></script>
+<script src="{% static "js/g.raphael-min.js" %}"></script>
+<script src="{% static "js/g.bar-min.js" %}"></script>
+<script src="{% static "js/g.pie-min.js" %}"></script>
+
 </body>
 </html>
