@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting Involved - Become a Volunteer</title>
+    </head>
+
+    <body>
+        <h1>Getting Involved - Become a Volunteer</h1>
+        <h2>Fill in your details:</h2>
+
+        <form id = "volunteer_registration", method = "post" action = "/pcs/volunteer_registration/">
+
+            {% csrf_token %}
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.help_text}}
+                {{ field }}
+            {% endfor %}
+
+            <input type = "submit" name = "submit" value = "Register" />
+        </form>
+    </body>
+</html>
