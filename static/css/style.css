@@ -106,7 +106,7 @@ body {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: rgba(100, 42, 128, 0.48);
 }
 @media only screen and (min-width: 1170px) {
 
@@ -286,7 +286,7 @@ cd-bounce-1 {  0% {
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
+  background: #70777e;
   color: white;
   border-radius: 0.25em;
 }
@@ -339,7 +339,7 @@ cd-bounce-1 {  0% {
   top: 24px;
   left: 100%;
   border-color: transparent;
-  border-left-color: white;
+  border-left-color: rgba(161, 117, 174, 0.54);
 }
 
 .cd-timeline-content .cd-read-more { float: left; }
@@ -360,7 +360,7 @@ cd-bounce-1 {  0% {
   left: auto;
   right: 100%;
   border-color: transparent;
-  border-right-color: white;
+  border-right-color:  rgba(161, 117, 174, 0.54);
 }
 
 .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more { float: right; }
